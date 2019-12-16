@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Matches Snapshot 1`] = `
+<body>
+  <div>
+    <div
+      class="display panel"
+      data-testid="mainDisplay"
+    >
+      <div
+        class="led green-led"
+        data-testid="locked-display"
+      >
+        Unlocked
+      </div>
+      <div
+        class="led green-led"
+        data-testid="closed-display"
+      >
+        Open
+      </div>
+    </div>
+    <div
+      class="controls panel"
+      data-testid="mainControls"
+    >
+      <button
+        class="toggle-btn"
+        disabled=""
+      >
+        Lock Gate
+      </button>
+      <button
+        class="toggle-btn"
+      >
+        Close Gate
+      </button>
+    </div>
+  </div>
+</body>
+`;

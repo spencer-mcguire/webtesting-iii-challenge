@@ -32,3 +32,13 @@ test("Close gate changes state to closed if clicked", () => {
   fireEvent.click(button);
   findByText(/unlock gate /i);
 });
+
+test("lock/unlock button is disabled if the gate is open", () => {
+  const { getByText } = render(<Controls closed={false} locked={false} />);
+  expect(getByText(/lock gate/i).disabled).toBe(true);
+});
+
+test("close/open button is disabled if the gate is locked", () => {
+  const { getByText } = render(<Controls closed={true} locked={true} />);
+  expect(getByText(/open gate/i).disabled).toBe(true);
+});
